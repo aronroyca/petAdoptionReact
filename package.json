@@ -1,0 +1,24 @@
+{
+  "name": "petadoptionreact",
+  "version": "1.0.0",
+  "description": "This is a React application for pets to be adopted",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aronroyca/petAdoptionReact.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aronroyca/petAdoptionReact/issues"
+  },
+  "homepage": "https://github.com/aronroyca/petAdoptionReact#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
