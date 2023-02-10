@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Pet from "./Pet.jsx"
+import useBreedList from './useBreedList.jsx';
 const ANIMALS = ['bird', 'cat', 'dog', 'rabbit', 'reptile']
 
 const SearchParams = () => {
@@ -7,7 +8,7 @@ const SearchParams = () => {
     const [animal, setAnimal] = useState("");
     const [breed, setBreed] = useState("");
     const [pets, setPets] =useState([])
-    const breeds = [];
+    const [breeds] = useBreedList(animal);
 
     useEffect(() => {
         requestPets()
@@ -55,7 +56,7 @@ const SearchParams = () => {
                     </select>
                 </label>
                 <label htmlFor="breed">
-                    Animal
+                    Breed
                     <select id="breed"
                         disabled= {breeds.length === 0}
                         value={breed}
